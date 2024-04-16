@@ -253,7 +253,7 @@ class Concert(object):
 
                 buybutton = box.find_element(
                     by=By.CLASS_NAME, value='sku-footer-buy-button')
-                sleep(1.0)
+                sleep(0.2)
                 buybutton_text = buybutton.text
                 if buybutton_text == "":
                     raise Exception(u"***Error: 提交票档按钮文字获取为空,适当调整 sleep 时间***")
